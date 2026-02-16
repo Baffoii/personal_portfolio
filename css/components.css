@@ -397,7 +397,7 @@
 
 .cloche:hover .cloche__3d-wrapper {
   animation-play-state: paused;
-  transform: rotateY(15deg) rotateX(-10deg) scale(1.08);
+  transform: translateY(-4px) scale(1.03);
 }
 
 /* The dome (cloche cover) */
@@ -411,11 +411,6 @@
   transition: transform var(--transition-slow), opacity var(--transition-slow);
   z-index: 2;
   filter: drop-shadow(0 4px 8px rgba(61, 43, 31, 0.15));
-}
-
-.cloche:hover .cloche__cover {
-  transform: translateY(-30px) rotateX(20deg);
-  opacity: 0.7;
 }
 
 /* Hidden content under the cloche */
@@ -432,7 +427,17 @@
   z-index: 1;
 }
 
-.cloche:hover .cloche__hidden {
+/* Open on click before navigation */
+.cloche.is-opening .cloche__3d-wrapper {
+  animation-play-state: paused;
+}
+
+.cloche.is-opening .cloche__cover {
+  transform: translateY(-56px) rotateX(28deg);
+  opacity: 0;
+}
+
+.cloche.is-opening .cloche__hidden {
   opacity: 1;
   transform: scale(1);
 }
