@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Richard Chen - GitHub repositories and Expo Go mobile apps.">
+  <title>Projects - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">My Projects</h1>
+        <p class="page-header__desc">A collection of things I've built, from mobile apps on Expo Go to open-source tools on GitHub.</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container">
+        <!-- Filter buttons -->
+        <div class="filters">
+          <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="github">GitHub</button>
+          <button class="filter-btn" data-filter="expo">Expo Go</button>
+        </div>
+
+        <!-- Projects grid -->
+        <div class="grid grid--3">
+          <!-- GitHub Project 1 -->
+          <article class="card project-card project-card--github animate-in" data-type="github">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="TaskFlow CLI screenshot">&#9881;&#65039;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/taskflow-cli">TaskFlow CLI</a>
+              </h3>
+              <p class="project-card__desc">A command-line task manager with smart scheduling and priority sorting. Built for developers who live in the terminal.</p>
+              <div class="project-card__tags">
+                <span class="badge">Python</span>
+                <span class="badge">Click</span>
+                <span class="badge">SQLite</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener"><!-- Replace with real URL -->GitHub Repo</a>
+              <a href="#" class="btn btn--secondary" target="_blank" rel="noopener"><!-- Replace with real URL -->Live Demo</a>
+            </div>
+          </article>
+
+          <!-- GitHub Project 2 -->
+          <article class="card project-card project-card--github animate-in" data-type="github">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="DataViz Dashboard screenshot">&#128202;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/dataviz-dashboard">DataViz Dashboard</a>
+              </h3>
+              <p class="project-card__desc">An interactive data visualization dashboard with real-time charts, filterable datasets, and export capabilities.</p>
+              <div class="project-card__tags">
+                <span class="badge">JavaScript</span>
+                <span class="badge">D3.js</span>
+                <span class="badge">Node.js</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener">GitHub Repo</a>
+              <a href="#" class="btn btn--secondary" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- GitHub Project 3 -->
+          <article class="card project-card project-card--github animate-in" data-type="github">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="API Starter Kit screenshot">&#128640;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/api-starter-kit">API Starter Kit</a>
+              </h3>
+              <p class="project-card__desc">A production-ready REST API boilerplate with authentication, rate limiting, and comprehensive test coverage.</p>
+              <div class="project-card__tags">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Expo Project 1 -->
+          <article class="card project-card project-card--expo animate-in" data-type="expo">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="RecipeBox app screenshot">&#127859;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/recipebox">RecipeBox</a>
+              </h3>
+              <p class="project-card__desc">A mobile recipe organizer that lets you save, tag, and search your favorite recipes with smart grocery list generation.</p>
+              <div class="project-card__tags">
+                <span class="badge">React Native</span>
+                <span class="badge">Expo</span>
+                <span class="badge">Firebase</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener"><!-- Replace with Expo Go URL -->Open in Expo Go</a>
+              <button class="btn btn--secondary" data-qr-src="/assets/images/projects/qr-recipebox.png">Show QR Code</button>
+            </div>
+          </article>
+
+          <!-- Expo Project 2 -->
+          <article class="card project-card project-card--expo animate-in" data-type="expo">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="HabitTracker app screenshot">&#127919;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/habittracker">HabitTracker</a>
+              </h3>
+              <p class="project-card__desc">Track daily habits with streaks, reminders, and visual progress charts. Designed to make consistency rewarding.</p>
+              <div class="project-card__tags">
+                <span class="badge">React Native</span>
+                <span class="badge">Expo</span>
+                <span class="badge">AsyncStorage</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener">Open in Expo Go</a>
+              <button class="btn btn--secondary" data-qr-src="/assets/images/projects/qr-habittracker.png">Show QR Code</button>
+            </div>
+          </article>
+
+          <!-- Expo Project 3 -->
+          <article class="card project-card project-card--expo animate-in" data-type="expo">
+            <div class="project-card__image">
+              <div class="placeholder-img" role="img" aria-label="CityWalks app screenshot">&#128694;</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a href="/project/citywalks">CityWalks</a>
+              </h3>
+              <p class="project-card__desc">Discover curated walking routes in any city with points of interest, audio guides, and community-contributed paths.</p>
+              <div class="project-card__tags">
+                <span class="badge">React Native</span>
+                <span class="badge">Expo</span>
+                <span class="badge">Maps API</span>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--primary" target="_blank" rel="noopener">Open in Expo Go</a>
+              <button class="btn btn--secondary" data-qr-src="/assets/images/projects/qr-citywalks.png">Show QR Code</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QR Code Modal -->
+  <div class="modal" id="qr-modal" role="dialog" aria-modal="true" aria-label="QR Code" hidden>
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <h3 class="modal__title">Scan to Open in Expo Go</h3>
+      <img class="modal__qr" src="" alt="QR code for Expo Go app">
+      <p class="modal__hint">Open the Expo Go app on your phone and scan this code.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/projects.js"></script>
+</body>
+</html>

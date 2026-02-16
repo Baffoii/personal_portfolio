@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Richard Chen - developer, writer, and food enthusiast at Stanford.">
+  <title>About Me - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__photo-wrapper">
+            <!-- Replace with your photo: <img src="/assets/images/headshot.jpg" alt="Richard Chen"> -->
+            <span class="hero__photo-placeholder" aria-hidden="true">&#128075;</span>
+          </div>
+          <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+              I'm Richard, a student at Stanford who spends most of his time building software, eating too much ramen,
+              and occasionally writing about both. I care deeply about creating tools that are genuinely useful and
+              experiences that feel thoughtful.
+            </p>
+            <p>
+              My work spans mobile apps (mostly built with React Native and Expo) and web-based tools. I'm drawn to
+              projects that sit at the intersection of design and engineering, where small details make a real
+              difference in how people experience technology.
+            </p>
+            <p>
+              Outside of code, you'll find me exploring food markets, trying to recreate dishes I've eaten abroad,
+              reading long essays about seemingly obscure topics, and going on walks with no particular destination.
+              I believe the best ideas come from unexpected connections between unrelated things.
+            </p>
+            <p>
+              If any of that resonates, feel free to <a href="/#contact">get in touch</a>. I'm always happy
+              to connect with people who are building interesting things or have strong opinions about noodles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food & Interests -->
+    <section class="section" style="background: var(--color-surface);">
+      <div class="container">
+        <h2 class="animate-in">Things I Enjoy</h2>
+
+        <div class="food-gallery" style="margin-bottom: var(--space-2xl);">
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#127836;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Ramen Adventures</h4>
+              <p class="food-card__desc">On an ongoing quest to find the perfect bowl of tonkotsu. Currently at 47 shops and counting.</p>
+            </div>
+          </div>
+
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#127843;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Home Cooking</h4>
+              <p class="food-card__desc">Trying to master the wok. Specialty: stir-fried noodles that sometimes turn out exactly right.</p>
+            </div>
+          </div>
+
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#9749;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Coffee</h4>
+              <p class="food-card__desc">Pour-over enthusiast. I take my coffee seriously but not myself.</p>
+            </div>
+          </div>
+
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#127838;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Street Food</h4>
+              <p class="food-card__desc">Night markets in Taipei, hawker centers in Singapore. The best food is often the cheapest.</p>
+            </div>
+          </div>
+
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#127833;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Sushi Appreciation</h4>
+              <p class="food-card__desc">From conveyor belt spots to omakase counters. A lifelong study of rice and fish.</p>
+            </div>
+          </div>
+
+          <div class="food-card animate-in">
+            <div class="food-card__image">&#127846;</div>
+            <div class="food-card__body">
+              <h4 class="food-card__title">Desserts</h4>
+              <p class="food-card__desc">Mochi, tiramisu, mango sticky rice. I have a dedicated dessert stomach.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="animate-in" style="margin-bottom: var(--space-lg);">Other Interests</h3>
+        <div class="interests-grid">
+          <div class="interest-item animate-in">
+            <span class="interest-item__icon">&#128218;</span>
+            <div class="interest-item__text">
+              <h4>Reading</h4>
+              <p>Long essays, nonfiction, the occasional novel</p>
+            </div>
+          </div>
+
+          <div class="interest-item animate-in">
+            <span class="interest-item__icon">&#128247;</span>
+            <div class="interest-item__text">
+              <h4>Photography</h4>
+              <p>Mostly food and cityscapes</p>
+            </div>
+          </div>
+
+          <div class="interest-item animate-in">
+            <span class="interest-item__icon">&#127956;&#65039;</span>
+            <div class="interest-item__text">
+              <h4>Hiking</h4>
+              <p>Bay Area trails on weekends</p>
+            </div>
+          </div>
+
+          <div class="interest-item animate-in">
+            <span class="interest-item__icon">&#127911;</span>
+            <div class="interest-item__text">
+              <h4>Music</h4>
+              <p>Jazz, lo-fi, and film scores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

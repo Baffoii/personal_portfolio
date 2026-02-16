@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="On Building Things That Last - an essay by Richard Chen about durability in software.">
+  <title>On Building Things That Last - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <article class="writing-detail">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/essays">Essays</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span>On Building Things That Last</span>
+        </nav>
+
+        <h1>On Building Things That Last</h1>
+
+        <div class="writing-detail__meta">
+          <time class="writing-detail__date" datetime="2025-12-15">December 15, 2025</time>
+          <span class="writing-detail__reading-time">5 min read</span>
+          <div class="writing-detail__tags">
+            <span class="badge">Technology</span>
+            <span class="badge">Engineering</span>
+          </div>
+        </div>
+
+        <div class="writing-detail__body">
+          <p>
+            There is a particular kind of satisfaction that comes from using software that just works. Not software
+            that dazzles you with animations or overwhelms you with features, but the kind that quietly does its
+            job, year after year, without demanding your attention.
+          </p>
+
+          <p>
+            Most of the tools I rely on daily are like this. They were built years ago by people who cared more
+            about reliability than novelty. They don't have landing pages with gradient backgrounds or investor
+            decks. They just work.
+          </p>
+
+          <h2>The Case for Boring Technology</h2>
+
+          <p>
+            There's a well-known essay that argues for choosing boring technology. The idea is straightforward:
+            every new technology you introduce carries a cost. That cost isn't just learning curves or
+            documentation gaps. It's the unknown unknowns, the failure modes you haven't encountered yet,
+            the edge cases that only reveal themselves under pressure.
+          </p>
+
+          <p>
+            When you choose a boring, proven technology, you're choosing predictability. You're choosing to spend
+            your innovation budget on the things that actually matter to your users rather than on the infrastructure
+            underneath.
+          </p>
+
+          <h2>What Durability Requires</h2>
+
+          <p>
+            Building something that lasts requires a different mindset than building something that ships fast.
+            It requires thinking about the person who will maintain this code in three years and might not be you.
+            It requires resisting the urge to optimize for the demo and instead optimizing for the mundane
+            Tuesday afternoon when something breaks.
+          </p>
+
+          <p>
+            This doesn't mean being conservative for its own sake. It means being intentional about where you
+            spend complexity. Every layer of abstraction, every dependency, every clever trick is a liability
+            that future you will have to understand, debug, and potentially replace.
+          </p>
+
+          <h2>The Long Game</h2>
+
+          <p>
+            I've started thinking about my own projects through this lens. Not every project needs to last forever,
+            and not every hack needs to be refactored. But for the tools I want to use for years, I've found
+            that a little upfront discipline goes a long way. Write clear commit messages. Choose dependencies
+            carefully. Document the decisions that aren't obvious from the code.
+          </p>
+
+          <p>
+            The best code I've written isn't the cleverest. It's the code that someone else could read and
+            understand without asking me a single question. That's what durability looks like.
+          </p>
+        </div>
+
+        <a href="/essays" class="writing-detail__back btn btn--ghost">&larr; Back to Essays</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

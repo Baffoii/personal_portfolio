@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Richard Chen - Developer, writer, and food enthusiast. Explore my projects, essays, and interests.">
+  <title>Richard Chen</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section: Photo left, description right -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__photo-wrapper">
+            <!-- Replace with your photo: <img src="/assets/images/headshot.jpg" alt="Richard Chen"> -->
+            <span class="hero__photo-placeholder" aria-hidden="true">&#128075;</span>
+          </div>
+          <div class="hero__content">
+            <h1>Hey, I'm Richard</h1>
+            <p class="hero__tagline">
+              I'm a Stanford student who builds apps, writes essays, and obsesses over great food.
+              I love creating things that are useful, thoughtful, and occasionally delicious.
+            </p>
+            <div class="hero__ctas">
+              <a href="/projects" class="btn btn--primary btn--lg">See My Projects</a>
+              <a href="/essays" class="btn btn--secondary btn--lg">Read My Writings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloche Section: Animated food covers -->
+    <section class="cloches-section" aria-label="Navigate sections">
+      <div class="container">
+        <h2 class="cloches-section__title animate-in">What's on the Menu?</h2>
+        <p class="cloches-section__subtitle animate-in">Hover to peek, click to explore.</p>
+
+        <div class="cloches-grid">
+          <!-- About Me cloche -->
+          <a href="/about" class="cloche animate-in" aria-label="About Me">
+            <div class="cloche__dish">
+              <div class="cloche__3d-wrapper">
+                <div class="cloche__cover" aria-hidden="true">&#127861;</div>
+                <div class="cloche__hidden" aria-hidden="true">&#128100;</div>
+              </div>
+              <div class="cloche__plate"></div>
+            </div>
+            <span class="cloche__label">About Me</span>
+            <span class="cloche__hint">Who I am</span>
+          </a>
+
+          <!-- My Projects cloche -->
+          <a href="/projects" class="cloche animate-in" aria-label="My Projects">
+            <div class="cloche__dish">
+              <div class="cloche__3d-wrapper">
+                <div class="cloche__cover" aria-hidden="true">&#127869;</div>
+                <div class="cloche__hidden" aria-hidden="true">&#128187;</div>
+              </div>
+              <div class="cloche__plate"></div>
+            </div>
+            <span class="cloche__label">My Projects</span>
+            <span class="cloche__hint">What I build</span>
+          </a>
+
+          <!-- Essays cloche -->
+          <a href="/essays" class="cloche animate-in" aria-label="Essays">
+            <div class="cloche__dish">
+              <div class="cloche__3d-wrapper">
+                <div class="cloche__cover" aria-hidden="true">&#127843;</div>
+                <div class="cloche__hidden" aria-hidden="true">&#9997;&#65039;</div>
+              </div>
+              <div class="cloche__plate"></div>
+            </div>
+            <span class="cloche__label">Essays</span>
+            <span class="cloche__hint">What I think</span>
+          </a>
+
+          <!-- Resume cloche -->
+          <a href="/resume" class="cloche animate-in" aria-label="Resume">
+            <div class="cloche__dish">
+              <div class="cloche__3d-wrapper">
+                <div class="cloche__cover" aria-hidden="true">&#127858;</div>
+                <div class="cloche__hidden" aria-hidden="true">&#128196;</div>
+              </div>
+              <div class="cloche__plate"></div>
+            </div>
+            <span class="cloche__label">Resume</span>
+            <span class="cloche__hint">My experience</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact" aria-label="Contact me">
+      <div class="container">
+        <div class="text-center animate-in">
+          <h2>Get in Touch</h2>
+          <p>Have a question, idea, or just want to say hi? Drop me a message.</p>
+        </div>
+
+        <form class="contact__form animate-in" id="contact-form" action="https://formsubmit.co/rchen23@stanford.edu" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New message from portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Doe" autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="align-self: flex-start;">Send Message</button>
+
+          <div class="contact__status" id="contact-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

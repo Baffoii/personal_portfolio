@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskFlow CLI - A command-line task manager built with Python.">
+  <title>TaskFlow CLI - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <article class="project-detail">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/projects">Projects</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span>TaskFlow CLI</span>
+        </nav>
+
+        <div class="project-detail__hero-img" role="img" aria-label="TaskFlow CLI screenshot">&#9881;&#65039;</div>
+
+        <div class="project-detail__type">
+          <span class="badge">GitHub Repository</span>
+        </div>
+
+        <h1>TaskFlow CLI</h1>
+
+        <div class="project-detail__desc">
+          <p>
+            TaskFlow is a command-line task manager for developers who prefer to stay in the terminal. It supports
+            smart scheduling based on priority and deadlines, recurring tasks, and a clean ASCII dashboard that
+            shows your week at a glance.
+          </p>
+          <p>
+            Built with Python and Click, it stores everything in a local SQLite database so there's no account
+            or cloud dependency. Tasks can be tagged, filtered, and sorted with intuitive shorthand commands.
+          </p>
+          <p>
+            The project started as a personal productivity tool and grew into something I use every day.
+            It's open source and contributions are welcome.
+          </p>
+        </div>
+
+        <div class="project-detail__section">
+          <h3>Tech Stack</h3>
+          <div class="flex flex-wrap gap-sm">
+            <span class="badge">Python</span>
+            <span class="badge">Click</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">Rich</span>
+          </div>
+        </div>
+
+        <div class="project-detail__section">
+          <h3>Links</h3>
+          <div class="project-detail__links">
+            <a href="#" class="btn btn--primary" target="_blank" rel="noopener"><!-- Replace with real URL -->GitHub Repo</a>
+          </div>
+        </div>
+
+        <a href="/projects" class="project-detail__back btn btn--ghost">&larr; Back to Projects</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Essays and papers by Richard Chen on technology, design, food, and more.">
+  <title>Essays - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Essays</h1>
+        <p class="page-header__desc">Thoughts on technology, design, food, and the spaces in between. Some academic papers, some personal reflections.</p>
+      </div>
+    </section>
+
+    <section class="section--sm">
+      <div class="container">
+        <div class="grid grid--2">
+          <!-- Essay 1 -->
+          <article class="card writing-card animate-in">
+            <time class="writing-card__date" datetime="2025-12-15">December 15, 2025</time>
+            <h3 class="writing-card__title">
+              <a href="/writing/on-building-things-that-last">On Building Things That Last</a>
+            </h3>
+            <p class="writing-card__excerpt">
+              We live in an era of rapid iteration, but some of the best software is the kind that quietly works for years.
+              What does it take to build something durable in a world obsessed with the new?
+            </p>
+            <div class="writing-card__tags">
+              <span class="badge">Technology</span>
+              <span class="badge">Engineering</span>
+            </div>
+            <a href="/writing/on-building-things-that-last" class="btn btn--ghost">Read More &rarr;</a>
+          </article>
+
+          <!-- Essay 2 -->
+          <article class="card writing-card animate-in">
+            <time class="writing-card__date" datetime="2025-10-03">October 3, 2025</time>
+            <h3 class="writing-card__title">
+              <a href="/writing/the-art-of-simplicity-in-design">The Art of Simplicity in Design</a>
+            </h3>
+            <p class="writing-card__excerpt">
+              The hardest part of design is not adding features but knowing which ones to leave out.
+              A look at how restraint produces more powerful experiences.
+            </p>
+            <div class="writing-card__tags">
+              <span class="badge">Design</span>
+              <span class="badge">UX</span>
+            </div>
+            <a href="/writing/the-art-of-simplicity-in-design" class="btn btn--ghost">Read More &rarr;</a>
+          </article>
+
+          <!-- Essay 3 -->
+          <article class="card writing-card animate-in">
+            <time class="writing-card__date" datetime="2025-08-20">August 20, 2025</time>
+            <h3 class="writing-card__title">
+              <a href="/writing/what-street-food-taught-me-about-ux">What Street Food Taught Me About UX</a>
+            </h3>
+            <p class="writing-card__excerpt">
+              The best street food vendors have perfected something tech companies spend millions trying to achieve: frictionless, delightful experiences.
+              Here's what I learned from watching noodle carts in Taipei.
+            </p>
+            <div class="writing-card__tags">
+              <span class="badge">Food</span>
+              <span class="badge">UX</span>
+            </div>
+            <a href="/writing/what-street-food-taught-me-about-ux" class="btn btn--ghost">Read More &rarr;</a>
+          </article>
+
+          <!-- Essay 4 -->
+          <article class="card writing-card animate-in">
+            <time class="writing-card__date" datetime="2025-06-12">June 12, 2025</time>
+            <h3 class="writing-card__title">
+              <a href="/writing/notes-on-learning-in-public">Notes on Learning in Public</a>
+            </h3>
+            <p class="writing-card__excerpt">
+              Why sharing what you learn, even when you feel like an amateur, accelerates growth faster than any course or credential.
+              A case for building in the open.
+            </p>
+            <div class="writing-card__tags">
+              <span class="badge">Personal</span>
+              <span class="badge">Learning</span>
+            </div>
+            <a href="/writing/notes-on-learning-in-public" class="btn btn--ghost">Read More &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

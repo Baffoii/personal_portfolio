@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What Street Food Taught Me About UX - an essay by Richard Chen.">
+  <title>What Street Food Taught Me About UX - Richard Chen</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav" role="banner">
+    <div class="container flex-between">
+      <a href="/" class="nav__logo">Richard Chen</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="/about" class="nav__link">About Me</a>
+        <a href="/projects" class="nav__link">My Projects</a>
+        <a href="/essays" class="nav__link">Essays</a>
+        <a href="/resume" class="nav__link">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <article class="writing-detail">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/essays">Essays</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span>What Street Food Taught Me About UX</span>
+        </nav>
+
+        <h1>What Street Food Taught Me About UX</h1>
+
+        <div class="writing-detail__meta">
+          <time class="writing-detail__date" datetime="2025-08-20">August 20, 2025</time>
+          <span class="writing-detail__reading-time">4 min read</span>
+          <div class="writing-detail__tags">
+            <span class="badge">Food</span>
+            <span class="badge">UX</span>
+          </div>
+        </div>
+
+        <div class="writing-detail__body">
+          <p>
+            Last summer in Taipei, I spent two weeks eating my way through night markets. Somewhere between
+            my third scallion pancake and a bowl of beef noodle soup that changed my understanding of broth,
+            I realized I was witnessing something that has nothing and everything to do with software.
+          </p>
+
+          <p>
+            The best street food vendors have perfected the thing most tech companies spend millions trying
+            to achieve: a frictionless, delightful experience that keeps people coming back. And they do it
+            with a folding table and a propane stove.
+          </p>
+
+          <h2>Lesson 1: Reduce the Menu</h2>
+
+          <p>
+            The stalls that had the longest lines typically sold one or two things. Not because they couldn't
+            cook more, but because focus is a feature. When you only make one dish, every repetition makes
+            it better. You notice the small things: the exact second to flip the wrapper, the ratio of
+            filling to dough that makes the texture perfect.
+          </p>
+
+          <p>
+            The parallel to product design is obvious. The apps I love most do fewer things but do them
+            extraordinarily well. Scope is the enemy of craft.
+          </p>
+
+          <h2>Lesson 2: Speed Is a Feature</h2>
+
+          <p>
+            A good street food vendor serves you in under two minutes. The workflow is choreographed.
+            Ingredients are pre-portioned. Steps happen in parallel. There's no wasted motion.
+          </p>
+
+          <p>
+            When we talk about UX, we often focus on visual design and information architecture. But speed
+            is the most underrated UX feature. Every millisecond of loading time is friction. Every
+            unnecessary click is a reason to leave.
+          </p>
+
+          <h2>Lesson 3: Trust the Regular</h2>
+
+          <p>
+            The real signal of quality isn't the tourist crowd. It's the regular who shows up every morning
+            at the same stall, orders the same thing with a nod, and sits in the same spot. That person
+            has tried every stall on the street and this is the one they come back to.
+          </p>
+
+          <p>
+            Retention is the metric that matters. Not downloads, not sign-ups, not page views. The question
+            is whether someone comes back tomorrow without being reminded.
+          </p>
+        </div>
+
+        <a href="/essays" class="writing-detail__back btn btn--ghost">&larr; Back to Essays</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Richard Chen</p>
+          <p class="footer__tagline">Building things, writing things, eating things.</p>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/Baffoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:rchen23@stanford.edu">Email</a>
+        </div>
+      </div>
+      <p class="footer__copy">&copy; <span class="footer__year">2026</span> Richard Chen</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
