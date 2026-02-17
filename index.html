@@ -12,12 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/layout.css">
-  <link rel="stylesheet" href="/css/components.css">
-  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -25,17 +25,17 @@
   <!-- Navigation -->
   <header class="nav" role="banner">
     <div class="container flex-between">
-      <a href="/" class="nav__logo">Richard Chen</a>
+      <a href="index.html" class="nav__logo">Richard Chen</a>
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
       </button>
       <nav class="nav__links" role="navigation" aria-label="Main navigation">
-        <a href="/about" class="nav__link">About Me</a>
-        <a href="/projects" class="nav__link">My Projects</a>
-        <a href="/essays" class="nav__link">Essays</a>
-        <a href="/resume" class="nav__link">Resume</a>
+        <a href="about.html" class="nav__link">About Me</a>
+        <a href="projects.html" class="nav__link">My Projects</a>
+        <a href="essays.html" class="nav__link">Essays</a>
+        <a href="resume.html" class="nav__link">Resume</a>
       </nav>
     </div>
   </header>
@@ -52,12 +52,12 @@
           <div class="hero__content">
             <h1>Hey, I'm Richard</h1>
             <p class="hero__tagline">
-              I'm a Stanford student who builds apps, writes essays, and obsesses over great food.
-              I love creating things that are useful, thoughtful, and occasionally delicious.
+              I'm a Stanford student studying Economics and Computer Science who builds products, improves existing systems, and experiments with new approaches to user-friendly apps.
+              I focus on translating requirements into engineering-ready solutions and optimizing workflows that make a real difference.
             </p>
             <div class="hero__ctas">
-              <a href="/projects" class="btn btn--primary btn--lg">See My Projects</a>
-              <a href="/essays" class="btn btn--secondary btn--lg">Read My Writings</a>
+              <a href="projects.html" class="btn btn--primary btn--lg">See My Projects</a>
+              <a href="essays.html" class="btn btn--secondary btn--lg">Read My Writings</a>
             </div>
           </div>
         </div>
@@ -68,15 +68,15 @@
     <section class="cloches-section" aria-label="Navigate sections">
       <div class="container">
         <h2 class="cloches-section__title animate-in">What's on the Menu?</h2>
-        <p class="cloches-section__subtitle animate-in">Click a cloche to open and explore.</p>
+        <p class="cloches-section__subtitle animate-in">Hover to peek, click to explore.</p>
 
         <div class="cloches-grid">
           <!-- About Me cloche -->
-          <a href="/about" class="cloche animate-in" aria-label="About Me">
+          <a href="about.html" class="cloche animate-in" aria-label="About Me">
             <div class="cloche__dish">
               <div class="cloche__3d-wrapper">
-                <div class="cloche__cover" aria-hidden="true">&#128718;&#65039;</div>
-                <div class="cloche__hidden" aria-hidden="true">&#128100;</div>
+                <div class="cloche__cover" aria-hidden="true"></div>
+                <div class="cloche__hidden" aria-hidden="true">&#127836;</div>
               </div>
               <div class="cloche__plate"></div>
             </div>
@@ -85,11 +85,11 @@
           </a>
 
           <!-- My Projects cloche -->
-          <a href="/projects" class="cloche animate-in" aria-label="My Projects">
+          <a href="projects.html" class="cloche animate-in" aria-label="My Projects">
             <div class="cloche__dish">
               <div class="cloche__3d-wrapper">
-                <div class="cloche__cover" aria-hidden="true">&#128718;&#65039;</div>
-                <div class="cloche__hidden" aria-hidden="true">&#128187;</div>
+                <div class="cloche__cover" aria-hidden="true"></div>
+                <div class="cloche__hidden" aria-hidden="true">&#127857;</div>
               </div>
               <div class="cloche__plate"></div>
             </div>
@@ -98,11 +98,11 @@
           </a>
 
           <!-- Essays cloche -->
-          <a href="/essays" class="cloche animate-in" aria-label="Essays">
+          <a href="essays.html" class="cloche animate-in" aria-label="Essays">
             <div class="cloche__dish">
               <div class="cloche__3d-wrapper">
-                <div class="cloche__cover" aria-hidden="true">&#128718;&#65039;</div>
-                <div class="cloche__hidden" aria-hidden="true">&#9997;&#65039;</div>
+                <div class="cloche__cover" aria-hidden="true"></div>
+                <div class="cloche__hidden" aria-hidden="true">&#127843;</div>
               </div>
               <div class="cloche__plate"></div>
             </div>
@@ -111,11 +111,11 @@
           </a>
 
           <!-- Resume cloche -->
-          <a href="/resume" class="cloche animate-in" aria-label="Resume">
+          <a href="resume.html" class="cloche animate-in" aria-label="Resume">
             <div class="cloche__dish">
               <div class="cloche__3d-wrapper">
-                <div class="cloche__cover" aria-hidden="true">&#128718;&#65039;</div>
-                <div class="cloche__hidden" aria-hidden="true">&#128196;</div>
+                <div class="cloche__cover" aria-hidden="true"></div>
+                <div class="cloche__hidden" aria-hidden="true">&#127859;</div>
               </div>
               <div class="cloche__plate"></div>
             </div>
@@ -181,6 +181,6 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

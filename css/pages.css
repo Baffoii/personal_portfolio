@@ -100,6 +100,13 @@
   padding: var(--space-3xl) 0 var(--space-xl);
 }
 
+/* Tighter spacing on resume, projects, and essays pages */
+.page-resume .page-header,
+.page-projects .page-header,
+.page-essays .page-header {
+  padding: var(--space-lg) 0 var(--space-md);
+}
+
 .page-header__title {
   margin-bottom: var(--space-sm);
 }
@@ -310,6 +317,41 @@
 /* ===========================
    RESUME PAGE
    =========================== */
+.resume-viewer-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-viewer__embed-wrap {
+  background: var(--color-warm-gray-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 70vh;
+}
+
+.resume-viewer__pdf {
+  display: block;
+  width: 100%;
+  min-height: 70vh;
+  height: 85vh;
+  border: none;
+}
+
+.resume-viewer__fallback {
+  margin-top: var(--space-md);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.resume-viewer__fallback a {
+  color: var(--color-accent);
+}
+
+.resume-viewer__fallback a:hover {
+  text-decoration: underline;
+}
+
 .resume-content {
   max-width: 780px;
   margin: 0 auto;

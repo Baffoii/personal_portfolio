@@ -40,6 +40,10 @@
   padding: var(--space-2xl) 0;
 }
 
+.section--tight {
+  padding: var(--space-md) 0;
+}
+
 /* Grid */
 .grid {
   display: grid;
@@ -52,6 +56,14 @@
 
 .grid--3 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid--compact {
+  gap: var(--space-md);
+}
+
+.grid--compact.grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .grid--4 {

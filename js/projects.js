@@ -17,7 +17,8 @@
 
       // Show/hide cards
       cards.forEach(function (card) {
-        if (filter === 'all' || card.getAttribute('data-type') === filter) {
+        var types = (card.getAttribute('data-type') || '').split(/\s+/).filter(Boolean);
+        if (filter === 'all' || types.indexOf(filter) !== -1) {
           card.setAttribute('data-visible', 'true');
           card.style.display = '';
         } else {

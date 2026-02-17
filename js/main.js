@@ -34,10 +34,14 @@
 // Active Nav Link
 // ===========================
 (function highlightActiveLink() {
-  var path = window.location.pathname.replace(/\/$/, "") || "/";
+  var path = window.location.pathname.replace(/\/$/, "") || "";
+  var filename = path.split("/").pop() || "index.html";
+  var baseName = filename.replace(/\.html$/, "") || "index";
   document.querySelectorAll(".nav__link").forEach(function (link) {
-    var href = link.getAttribute("href").replace(/\/$/, "") || "/";
-    if (path === href || (href !== "/" && path.startsWith(href))) {
+    var href = link.getAttribute("href") || "";
+    var linkFile = href.split("#")[0].replace(/\/$/, "") || "index.html";
+    var linkBase = linkFile.replace(/\.html$/, "") || "index";
+    if (filename === linkFile || baseName === linkBase || (linkFile !== "index.html" && path.endsWith(linkFile))) {
       link.classList.add("nav__link--active");
     }
   });
@@ -86,44 +90,4 @@
   if (el) {
     el.textContent = new Date().getFullYear();
   }
-})();
-
-// ===========================
-// Cloche Click-to-Open Navigation
-// ===========================
-(function initClocheNavigation() {
-  var cloches = document.querySelectorAll(".cloches-section .cloche");
-  if (!cloches.length) return;
-
-  var prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  ).matches;
-
-  cloches.forEach(function (cloche) {
-    cloche.addEventListener("click", function (event) {
-      if (event.defaultPrevented) return;
-      if (
-        event.button !== 0 ||
-        event.metaKey ||
-        event.ctrlKey ||
-        event.shiftKey ||
-        event.altKey
-      )
-        return;
-
-      var href = cloche.getAttribute("href");
-      if (!href || cloche.dataset.opening === "true") return;
-
-      event.preventDefault();
-      cloche.dataset.opening = "true";
-      cloche.classList.add("is-opening");
-
-      window.setTimeout(
-        function () {
-          window.location.assign(href);
-        },
-        prefersReducedMotion ? 0 : 420,
-      );
-    });
-  });
 })();
